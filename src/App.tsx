@@ -1,14 +1,12 @@
 import ActionsForm from "./Form/ActionsForm";
 import Meme from "./GetMeme/Meme";
-// import Testuse from "./Testuse/Testuse";
 
 function App() {
   return (
-    <div>
-      <h1 className=" meme-text text-[4rem]">meme downloader</h1>
-      <div className="bg-black gap-10 text-white py-10 flex min-h-screen h-full w-full flex-col justify-center items-center">
+    <div className="bg-slate-800">
+      <nav className="pt-3">meme downloader</nav>
+      <div className="gap-10 py-10 flex min-h-screen h-full w-full flex-col justify-center items-center">
         <Meme />
-        {/* <Testuse /> */}
         <ActionsForm />
       </div>
     </div>

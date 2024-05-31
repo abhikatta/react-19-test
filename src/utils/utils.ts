@@ -1,3 +1,5 @@
+import { TOTAL_MEME_COUNT } from "../constans/constants";
+
 export const download = async (URL: string, name: string) => {
   try {
     const response = await fetch(URL);
@@ -13,4 +15,8 @@ export const download = async (URL: string, name: string) => {
   } catch (error) {
     console.error("Error downloading the image:", error);
   }
+};
+
+export const generateRandomMemeId = () => {
+  return Math.floor(Math.random() * TOTAL_MEME_COUNT);
 };
