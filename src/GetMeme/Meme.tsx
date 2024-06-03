@@ -11,16 +11,17 @@ import NextRandomMeme from "../Assets/Icons/nextRandomIcon.png";
 const Meme = () => {
   const memeText = useSelector((state: RootState) => state.memeText);
   const [Id, setId] = useState<number>(generateRandomMemeId);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
   const fetchMeme = async () => {
     await new Promise((resolve) => setTimeout(resolve, 200));
     const res = await fetch(API_URL);
     return res.json();
   };
+
   const MemeItem = () => {
     const memes = use<IMeme>(fetchMeme());
     const memeItem = memes.data.memes[Id];
-
-    const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
       const canvas = canvasRef.current;

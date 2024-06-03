@@ -1,9 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-
-interface InitialState {
-  topText: string;
-  bottomText: string;
-}
+import { InitialState } from "../../GetMeme/types";
 
 const initialState: InitialState = {
   topText: "",
