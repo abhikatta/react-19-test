@@ -5,8 +5,8 @@ import { download, generateRandomMemeId } from "../../utils/utils";
 import { API_URL } from "../../constans/constants";
 import { useSelector } from "react-redux";
 import { RootState } from "../../Redux/store";
-import DownloadIcon from "../Assets/Icons/downloadIcon.png";
-import NextRandomMeme from "../Assets/Icons/nextRandomIcon.png";
+import DownloadIcon from "../../Assets/Icons/downloadIcon.png";
+import NextRandomMeme from "../../Assets/Icons/nextRandomIcon.png";
 const MemeItem = ({
   fetchMeme,
   Id,
