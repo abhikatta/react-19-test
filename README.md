@@ -10,7 +10,7 @@ The goal is to create a meme generator using react 19's latest hooks and feature
 
 ## Hosting on:
 
-- vercel or github pages
+- vercel
 
 ## ignore this:
 
