@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Button from "../Components/Button";
+import Button from "../Button";
 
 const StateTest = () => {
   const [inc, setInc] = useState(0);

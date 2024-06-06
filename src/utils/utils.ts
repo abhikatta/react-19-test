@@ -1,5 +1,3 @@
-import { Ref, RefObject } from "react";
-import { IMeme, InitialState } from "../GetMeme/types";
 import { TOTAL_MEME_COUNT } from "../constans/constants";
 
 export const download = async (URL: string, name: string) => {

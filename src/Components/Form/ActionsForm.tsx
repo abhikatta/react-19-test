@@ -1,8 +1,8 @@
 import { useFormStatus } from "react-dom";
-import Button from "../Components/Button";
+import Button from "../Button";
 import { useDispatch } from "react-redux";
-import { clearInputs, setInputs } from "../Redux/Input/Input";
-import { AppDispatch } from "../Redux/store";
+import { clearInputs, setInputs } from "../../Redux/Input/Input";
+import { AppDispatch } from "../../Redux/store";
 
 const Form = ({ formAction }: { formAction: (formData: FormData) => void }) => {
   return (

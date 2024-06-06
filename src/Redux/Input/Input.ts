@@ -1,7 +1,7 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { InitialState } from "../../GetMeme/types";
+import { MemeText } from "../../Components/GetMeme/types";
 
-const initialState: InitialState = {
+const initialState: MemeText = {
   topText: "",
   bottomText: "",
 };
@@ -10,9 +10,7 @@ const inputSlice = createSlice({
   name: "input",
   initialState: initialState,
   reducers: {
-    setInputs: (state, action: PayloadAction<InitialState>) => {
-      console.log("action.payload");
-
+    setInputs: (state, action: PayloadAction<MemeText>) => {
       state.topText = action.payload.topText;
       state.bottomText = action.payload.bottomText;
     },

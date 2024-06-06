@@ -14,3 +14,8 @@ export interface IMeme {
     ];
   };
 }
+
+export interface MemeText {
+  topText: string;
+  bottomText: string;
+}

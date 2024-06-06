@@ -3,8 +3,8 @@
 // import { useEffect } from "react";
 // import StateTest from "./stateTest/stateTest";
 
-import ActionsForm from "./Form/ActionsForm";
-import Meme from "./GetMeme/Meme";
+import ActionsForm from "./Components/Form/ActionsForm";
+import Meme from "./Components/GetMeme/Meme";
 
 const App = () => {
   return (

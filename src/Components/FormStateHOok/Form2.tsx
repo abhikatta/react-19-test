@@ -1,5 +1,5 @@
 import { useFormState } from "react-dom";
-import Button from "../Components/Button";
+import Button from "../Button";
 
 const Form2 = ({
   itemId,
@@ -9,7 +9,7 @@ const Form2 = ({
   itemTitle: string;
 }) => {
   // takes in a function and an initial state
-  const addToCart = (prevState: any, queryData: FormData) => {
+  const addToCart = (prevState: unknown, queryData: FormData) => {
     console.log(prevState);
 
     const itemId = queryData.get("itemId")?.toString();
